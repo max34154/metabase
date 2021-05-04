@@ -16,15 +16,26 @@ export const ACTIONS = {
     icon: "clarification",
     color: "accent2",
   },
+  dismiss: {
+    type: "dismiss",
+    icon: "close",
+    color: "medium",
+  },
 };
 
 export const MODERATION_TEXT = {
   cancel: t`Cancel`,
   actionCreationPlaceholder: t`You can add details if you'd like`,
   user: {
-    verification: {},
-    flag: {},
-    question: {},
+    verification: {
+      action: t`Verify this`,
+    },
+    flag: {
+      action: t`Something's wrong`,
+    },
+    question: {
+      action: t`I'm confused`,
+    },
   },
   moderator: {
     action: t`Moderate`,
@@ -45,6 +56,9 @@ export const MODERATION_TEXT = {
       actionCreationDescription: "need text 1",
       actionCreationLabel: "need text 2",
       actionCreationButton: "need text 3",
+    },
+    dismiss: {
+      action: t`Dismiss`,
     },
   },
 };
